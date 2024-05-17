@@ -1,14 +1,14 @@
 :root {
-    --darkgreen: #ace1af;
-    --greener: #B0EBB4;
-    --green: #BFF6C3;
-    --lightgreen: #E0FBE2;
+    --purple: #240750;
+    --blue: #344C64;
+    --lightblue: #577B8D;
+    --green: #57A6A1;
+    
 }
 body {
     margin:0;
     padding:0;
-    height: 100vh;
-
+    
 }
 .container {
     height: 100vh;
@@ -24,7 +24,9 @@ body {
 /* ------------------ Sidebar ----------------------*/
 .sidebar {
     grid-row: 1 / -1;
-    background-color: var(--lightgreen);
+    background-color: var(--green);
+    color:white
+
     
 }
 .sidebar-header {
@@ -50,13 +52,13 @@ body {
     
 }
 li img {
+
     height: 25px;
     filter: invert(92%) sepia(17%) saturate(611%) hue-rotate(62deg) brightness(92%) contrast(91%);
     
 }
 .sidebar-action-links {
     display: flex;
-    
     justify-content: flex-start;
 } 
 /* ------------------ Sidebar ----------------------*/
