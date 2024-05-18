@@ -3,6 +3,8 @@
     --blue: #344C64;
     --lightblue: #577B8D;
     --green: #57A6A1;
+    --lightgreen: #ACE1AF;
+
     
 }
 body {
@@ -18,8 +20,49 @@ body {
 .container div {
     border: 1px solid greenyellow;
 }
+/* ------------------ Header ----------------------*/
 .header {
-    grid-column: 2/ -1;
+    grid-column: 2/ -1; 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--lightgreen);
+    color:var(--purple)
+}
+.header-top {
+    display: flex;
+}
+.search img {
+    height: 25px;
+}
+.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
+    flex:2;
+}
+#searchbar {
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--lightblue);
+    height: 20px;
+    width: 100%
+}
+.header-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+    flex:1;
+    gap: 7%;
+    font-weight: bold;
+}
+.header-profile img {
+    height: 25px;
+}
+#header-top-pp {
+    height: 40px;
 }
 /* ------------------ Sidebar ----------------------*/
 .sidebar {
