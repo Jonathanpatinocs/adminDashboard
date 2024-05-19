@@ -17,7 +17,7 @@ body {
     display:grid;
     grid-template: 1fr 4fr / minmax(210px, 1fr) 4fr;
 }
-.container div {
+.container > div {
     border: 1px solid greenyellow;
 }
 /* ------------------ Header ----------------------*/
@@ -187,6 +187,7 @@ li img {
     
 } 
 .card {
+    color:var(--purple);
     background-color: var(--lightgreen);
     border-radius: 10px;
     min-width: 200px;
@@ -223,4 +224,45 @@ li img {
 }
 .card-buttons img {
     height: 20px;
+}
+.announcements {
+    background-color: var(--lightgreen);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 13px;
+    color: lightslategrey;
+    border-radius: 5px;
+}
+.announcements div span {
+    color:var(--purple);
+    font-weight: bold;
+    font-size: 14px;
+}
+hr {
+    background-color: #240750;
+    color: #240750;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.trending {
+    background-color: var(--lightgreen);
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.trending-profiles {
+ display: flex;
+ gap: 10px;
+ align-items: center;
+ justify-content: center;
+}
+.trending-profiles img {
+    height: 40px;
+}
+.trending-profiles-text {
+    color: lightslategrey;
+}
+.trending-profiles-text span  {
+    color: var(--purple);
 }
